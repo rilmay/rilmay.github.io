@@ -1,0 +1,201 @@
+
+*{
+    box-sizing: border-box;
+    /*-webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;*/
+}
+
+body{
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.8px;
+    word-wrap: break-word;
+    font-weight: 400;
+    /*background-color: #fff;*/
+    color: #6f6f6f;
+}
+
+.nguzov_all_wrap{
+	float: left;
+	margin: 0px;
+    background-image: url('../images/wallpaper4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed
+}
+
+/*leftpart*/
+
+.nguzov_leftpart{
+	width: 360px;
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: #fff;
+    z-index: 15;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.09);
+}
+
+.nguzov_leftpart > .inner{
+    width: 100%;
+    height: 100%;
+    clear: both;
+    float: left;
+    padding: 60px;
+}
+
+.nguzov_menu_photo{
+    border-radius: 50%;
+    width: 260px;
+    height: auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;  
+}
+
+.nguzov_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 80px 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.nguzov_menu_item{
+}
+
+.nguzov_menu_item a{
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+    display: block;
+    position: relative;
+    padding: 13px 0px;
+}
+
+.nguzov_menu_item a:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0,0,0,.1);
+    left: 0px;
+    bottom: 0px;
+}
+.nguzov_menu_item a:after{
+    position: absolute;
+    /* content: ""; */
+    width: 0%;
+    height: 2px;
+    background-color: rgba(0,0,0,.08);
+    left: 0px;
+    bottom: 0px;
+}
+.nguzov_menu_item:last-child a:before{display: none;}
+.nguzov_menu_item:last-child a:after{display: none;}
+.nguzov_menu_item a:hover{color: #ff214f;}
+.nguzov_menu_item a:hover:after{width: 100%;}
+
+/*rightpart*/
+
+.nguzov_rightpart{
+    padding-left: 360px;
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+}
+
+.nguzov_section{
+    padding: 40px;
+    height: 100vh;
+
+    box-shadow: 0 -30px 30px rgba(0, 0, 0, 0.09);
+}
+
+.nguzov_section_label{
+   color: #ff214f; 
+}
+
+.nguzov_section_header{
+
+}
+
+.nguzov_section_text{
+   font-family: "Roboto";
+    font-size: 16px;
+}
+
+/*home*/
+
+.nguzov_transparent_white{
+    width: 70%
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.nguzov_home_label{
+    font-weight: 500;
+    color: #000;
+    min-width: 85px;
+    display: inline-block;
+    color: #ff214f; 
+}
+
+.nguzov_home_info ul{
+    margin: 0px;
+    list-style-type: none;
+}
+
+.nguzov_home_info ul li{
+    margin: 0px 0px 10px 0px;
+    width: 50%;
+    float: left;
+    position: relative;
+    padding-left: 30px;
+}
+
+.nguzov_home_info ul li:nth-of-type(2n){clear: right;}
+
+.nguzov_home_info li a{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    border-bottom: 1px solid transparent;
+}
+
+.nguzov_home_info li svg{
+    position: absolute;
+    left: 2px;
+    top: 8px;
+    width: 17px;
+    height: 17px;
+    color: #ff214f;
+}
+
+/*other sections*/
+
+.nguzov_background{
+    background-color: #fff;
+}
+
+.nguzov_background_home{
+    padding: 20px;
+    max-width: 80%;
+    height: 40vh;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    margin: auto auto;
+}
+
+.nguzov_background_wrap{
+    display: flex;
+}

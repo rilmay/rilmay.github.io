@@ -1,2 +1,2 @@
 # rilmay.github.io
-Business card websit
+Business card website

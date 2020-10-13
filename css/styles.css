@@ -22,6 +22,7 @@ body{
 .nguzov_all_wrap{
 	float: left;
 	margin: 0px;
+    width: 100%;
     background-image: url('../images/wallpaper4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -49,16 +50,21 @@ body{
     padding: 60px;
 }
 
+.nguzov_image_wrapper{
+    position: absolute;
+    top: 60px;
+    left: 45px;
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+    padding: 5px 5px 5px 5px;
+    background-color: rgba(0,0,0,0.08); 
+}
+
 .nguzov_menu_photo{
     border-radius: 50%;
     width: 260px;
     height: auto;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;  
 }
 
 .nguzov_menu{
@@ -108,8 +114,8 @@ body{
 /*rightpart*/
 
 .nguzov_rightpart{
-    padding-left: 360px;
     width: 100%;
+    padding-left: 360px;
     height: auto;
     clear: both;
     float: left;
@@ -118,8 +124,6 @@ body{
 .nguzov_section{
     padding: 40px;
     height: 100vh;
-
-    box-shadow: 0 -30px 30px rgba(0, 0, 0, 0.09);
 }
 
 .nguzov_section_label{
@@ -181,16 +185,33 @@ body{
     color: #ff214f;
 }
 
+/*development summary*/
+
+.nguzov_projects_list ul li{
+    margin: 0px 0px 10px 0px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.nguzov_projects_list ul li svg{
+    fill: #ff214f;
+    position: absolute;
+    top: 7px;
+    left: 3px;
+    width: 15px;
+}
+
 /*other sections*/
 
 .nguzov_background{
     background-color: #fff;
+    /*box-shadow: 0 -30px 30px rgba(0, 0, 0, 0.09);*/
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.09);
 }
 
-.nguzov_background_home{
+.nguzov_background_message{
     padding: 20px;
     max-width: 80%;
-    height: 40vh;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 10px;
     margin: auto auto;

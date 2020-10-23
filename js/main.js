@@ -15,7 +15,7 @@ let map = new Map([
 	}],
 	[".nguzov_message_pack_1",{
 		scrollTopRateCondition: function(scrollTopRate){return scrollTopRate < 0.2 && !this.isShown},
-		resultStyle: {'marginTop': '220px', opacity: '1',}
+		resultStyle: {'marginTop': ($(window).height() / 2 - $(".nguzov_message_pack_1").outerHeight() / 2) + 'px', opacity: '1',}
 	}]
 ]);
 
@@ -27,6 +27,11 @@ const messageAnimation = function(){
 
 		map.forEach(function(value, key, map){
 			if(value.scrollTopRateCondition(scrollTopRate)){
+				console.log($(window).height());
+				console.log($(".nguzov_message_pack_1").height());
+				console.log(($(window).height() /2 - $(".nguzov_message_pack_1").outerHeight() / 2) + 'px');
+					
+
 				$(key).animate(value.resultStyle, 1000);
 				value.isShown = true;
 			}

@@ -27,11 +27,6 @@ const messageAnimation = function(){
 
 		map.forEach(function(value, key, map){
 			if(value.scrollTopRateCondition(scrollTopRate)){
-				console.log($(window).height());
-				console.log($(".nguzov_message_pack_1").height());
-				console.log(($(window).height() /2 - $(".nguzov_message_pack_1").outerHeight() / 2) + 'px');
-					
-
 				$(key).animate(value.resultStyle, 1000);
 				value.isShown = true;
 			}
@@ -60,11 +55,17 @@ $( "#toggle2" ).click(function() {
     $( "#toggle2" ).toggle( "bounce", { times: 1 }, "slow" );
 });
 
+$("#showmenu").click(function(){
+	if($(".nguzov_dropdown").is(":hidden")){
+		$("#showmenu").css({color: "#ff214f"});
+	}else{
+		$("#showmenu").css({color: "inherit"});
+	}
+	$(".nguzov_dropdown").toggle();
+});
 
-// $( "#avatar" ).hover(function(){
-// 	// $( "#avatar" ).animate({width: (currentAvatarWandH * 1.05) + 'px', height: (currentAvatarWandH * 1.05) + 'px'}, 500);
-// 	$( "#avatar" ).css({ transform: 'scale(1.005)' });
-// }, function(){
-// 	$( "#avatar" ).css({ transform: 'scale(0.995)' });
-// }
-// );
+$('a[href^="#"]').click(function(){
+	if($(".nguzov_dropdown").is(":visible")){
+		$(".nguzov_dropdown").hide();
+	}
+})

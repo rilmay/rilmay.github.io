@@ -7,6 +7,9 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+	<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,500i,600,700,700i,800&display=swap" 
 	rel="stylesheet">
@@ -16,13 +19,29 @@
 
 	<link rel="stylesheet" type="text/css" href="css/styles.css" ></link>
 
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 	<title>Guzov Nikita</title>
 </head>
 <body>
 	<div class="nguzov_all_wrap">
-		<div class="nguzov_topbar">
-		</div>
-		<div class="nguzov_dropdown">
+		<div class="nguzov_mobile_menu">	
+			<div class="nguzov_topbar">
+				<div class="nguzov_topbar_image_wrapper">
+					<img class="nguzov_topbar_image" src="images/my_photo_square2.jpg">
+				</div>
+				<div id="showmenu" class="nguzov_topbar_button" >
+					<i class="fas fa-bars fa-2x"></i>
+				</div>				
+			</div>
+			<div class="nguzov_dropdown" style="display: none">
+				<ul class="nguzov_menu">
+					<li class="nguzov_menu_item"><a href="#home">Home</a></li>	
+					<li class="nguzov_menu_item"><a href="#about">About</a></li>
+					<li class="nguzov_menu_item"><a href="#development">Development summary</a></li>		
+					<li class="nguzov_menu_item"><a href="#contact">Contact</a></li>	
+				</ul>
+			</div>
 		</div>
 		<div class="nguzov_leftpart">
 			<div class="inner">
@@ -47,7 +66,7 @@
 					<div class="nguzov_section_text">
 						<p>Hello, I am <span class="nguzov_section_label">Nikita Guzov</span>. I am software engineer and web developer.</p>
 						<p>I have <span class="nguzov_red">1+</span> year of production experience.</p> 
-						<p>Main focuses: <span class="nguzov_red">Java</span>, <span class="nguzov_red">Javasript</span>, <span class="nguzov_red">Salesforce</span>, <span class="nguzov_red">HTML/CSS</span>, <span class="nguzov_red">Network Technologies</span>.
+						<p>Main focuses: <span class="nguzov_red">Java</span>, <span class="nguzov_red">Javascript</span>, <span class="nguzov_red">Salesforce</span>, <span class="nguzov_red">HTML/CSS</span>, <span class="nguzov_red">Network Technologies</span>.
 						</p>	
 					</div>	
 					<div class="nguzov_home_info">
@@ -81,7 +100,7 @@
 				</div>
 			</div>
 
-			<div id="about" class="nguzov_section nguzov_background" style="padding: 5px;">
+			<div id="about" class="nguzov_section nguzov_background" style="height: auto;">
 				<div class="nguzov_section_header" style="padding: 0px 0px 5px 20px">About</div>
 				<div class="nguzov_section_text">
 					<div class="nguzov_about_flex_container">
@@ -111,42 +130,41 @@
 			<div id="development" class="nguzov_section" style="height: auto; padding: 0px 0px 40px 0px;">
 				<div class="nguzov_background_message nguzov_message_pack_2 nguzov_dev_backgound_programming">
 					<div class="nguzov_dev_width_container">
-						<p>I have successfully completed a Java development course and Salesforce student program.</p>
+						<p>I have successfully completed a <span class="nguzov_red">Java development course</span> and <span class="nguzov_red">Salesforce student program</span>.</p>
 						<p>Here is a list of projects, in which I participated or created by myself:</p>
 						<div class="nguzov_projects_list">
 							<ul>
 								<li>
-									
 									Salesforce hackaton project
 								</li>
-							<li>
-							Java and Salesforce course projects
-							</li>
-							<li>
-								Personal projects
-							</li>
-							<li>
-								Production projects.
-							</li>
+								<li>
+									Java and Salesforce course projects
+								</li>
+								<li>
+									Personal projects
+								</li>
+								<li>
+									Production projects.
+								</li>
 							</ul>
 						</div>
-						I have worked with SCRUM and Kanban development approach, Continuous Integration and Software design patterns.
+						I have worked with <span class="nguzov_red">SCRUM</span> and <span class="nguzov_red">Kanban</span> development approach, <span class="nguzov_red">Continuous Integration</span> and <span class="nguzov_red">Software design patterns</span>.
 					</div>
 				</div>
 				<div class="nguzov_background_message nguzov_message_pack_2 nguzov_dev_backgound_blog" style="margin-top: 40px;">
 					<div class="nguzov_dev_width_container">
-						I have personal engineering blog, in which I create projects and researches in different spheres and show the result to people.
+						I have personal engineering <a href="https://habr.com/ru/users/rilmay/posts/" class="nguzov_red">blog</a>, in which I create projects and researches in different spheres and show the result to people.
 					</div>
 				</div>
 				<div class="nguzov_background_message nguzov_message_pack_2 nguzov_dev_backgound_english" style="margin-top: 40px;">
 					<div class="nguzov_dev_width_container">
-						I have CEFR B2 English certificate.  
+						I have CEFR <span class="nguzov_red">B2 English certificate</span>.  
 					</div>
 				</div>
 				<div class="nguzov_dev_flex_container">
 					<div class="nguzov_background_message nguzov_message_pack_2 nguzov_dev_backgound_java" style="margin-top: 40px;">
 						<div class="nguzov_dev_width_container">
-							Java related technologies, which I have used in projects:
+							<span class="nguzov_red">Java related</span> technologies, which I have used in projects:
 							<div class="nguzov_projects_list">
 								<ul>
 									<li>
@@ -185,7 +203,7 @@
 					</div>
 					<div class="nguzov_background_message nguzov_message_pack_2 nguzov_dev_backgound_sf" style="margin-top: 40px;">
 						<div class="nguzov_dev_width_container">
-							Salesforce related technologies, which I have used in projects:
+							<span class="nguzov_red">Salesforce related</span> technologies, which I have used in projects:
 							<div class="nguzov_projects_list">
 								<ul>
 									<li>
@@ -198,7 +216,13 @@
 										Sales Cloud,<p>Service Cloud, Community Cloud</p>								
 									</li>
 									<li>
-										Visualforce, Aura Components, Lightning Web Components(LWC)
+										Visualforce
+									</li>
+									<li>
+										Aura Components
+									</li>
+									<li>
+										Lightning Web Components(LWC)
 									</li>
 									<li>
 										Salesforce Lightning Design System(SLDS)
@@ -209,7 +233,7 @@
 					</div>
 					<div class="nguzov_background_message nguzov_message_pack_2 nguzov_dev_backgound_frontend" style="margin-top: 40px;">
 						<div class="nguzov_dev_width_container">
-							Frontend technologies, which I have used in projects:
+							<span class="nguzov_red">Frontend</span> technologies, which I have used in projects:
 							<div class="nguzov_projects_list">
 								<ul>
 									<li>
@@ -230,7 +254,7 @@
 					</div>
 					<div class="nguzov_background_message nguzov_message_pack_2 nguzov_dev_backgound_instruments" style="margin-top: 40px;">
 						<div class="nguzov_dev_width_container">
-							Some frequently used developing tools:
+							Some frequently used <span class="nguzov_red">developing tools</span>:
 							<div class="nguzov_projects_list">
 								<ul>
 									<li>
@@ -246,7 +270,10 @@
 										MySQL,  PostgreSQL
 									</li>
 									<li>
-										IntellliJ IDEA, Illuminated Cloud Plug-in
+										IntellliJ IDEA
+									</li>
+									<li>
+										Illuminated Cloud Plug-in
 									</li>
 									<li>
 										Visual Studio Code
@@ -257,8 +284,30 @@
 					</div>
 				</div>
 			</div>
-		<div id="contact" class="nguzov_section nguzov_background" style="height: 50vh;">
-			<div class="nguzov_section_header">Contact</div>
+		<div id="contact" class="nguzov_section nguzov_background" style="height: auto; width: 100%;">
+			<div class="nguzov_section_header"  style="padding: 0px 0px 5px 20px">Contact</div>
+			<div class="nguzov_contact_wrapper">
+				<a href="https://www.linkedin.com/in/nguzov/" class="nguzov_contact_button">
+			        <div class="nguzov_contact_icon">
+					<i class="fab fa-linkedin-in"></i></div>
+					<span>LinkedIn</span>
+				</a>
+				<a href="https://github.com/rilmay" class="nguzov_contact_button">
+			        <div class="nguzov_contact_icon">
+					<i class="fab fa-github"></i></div>
+					<span>Github</span>
+				</a>
+				<a href="https://habr.com/ru/users/rilmay/posts/" class="nguzov_contact_button">
+			        <div class="nguzov_contact_icon">
+					<i class="fas fa-pencil-ruler"></i></div>
+					<span>Habr</span>
+				</a>
+				<a href="mailto:guzovnikita@gmail.com" class="nguzov_contact_button">
+			        <div class="nguzov_contact_icon">
+					<i class="fas fa-envelope"></i></div>
+					<span>Mail</span>
+				</a>
+			</div>
 			<div class="nguzov_section_text"></div>
 		</div>
 	</div>

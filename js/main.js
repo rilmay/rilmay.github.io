@@ -66,6 +66,9 @@ $("#showmenu").click(function(){
 
 $('a[href^="#"]').click(function(){
 	if($(".nguzov_dropdown").is(":visible")){
+		$("#showmenu").css({color: "inherit"});
 		$(".nguzov_dropdown").hide();
+	}else{
+		$("#showmenu").css({color: "#ff214f"});
 	}
 })

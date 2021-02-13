@@ -348,6 +348,14 @@ body{
     background-size: 30%;
 }
 
+.nguzov_dev_backgound_sales_certificate{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7)),
+    url('../images/messages/sales_certificate.png');
+    background-position: 102% 0%;
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
+
 .nguzov_dev_backgound_programming{
     background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7)),
     url('../images/messages/projects3.jpg');

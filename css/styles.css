@@ -380,6 +380,22 @@ body{
     background-size: 70%;
 }
 
+.nguzov_dev_backgound_aws{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7)),
+    url('../images/messages/aws.svg');
+    background-position: 106% 50%;        
+    background-repeat: no-repeat;
+    background-size: 35%;
+}
+
+.nguzov_dev_backgound_github{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7)),
+    url('../images/messages/github.svg');
+    background-position: 105% 50%;        
+    background-repeat: no-repeat;
+    background-size: 23%;
+}
+
 /*about*/
 
 .nguzov_about_flex_container{
